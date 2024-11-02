@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center flex-column" style="height: 100vh; background: linear-gradient(135deg, #007bff, #6a11cb); position: relative;">
+  <div class="text-center">
+    <h1 style="font-size: 5rem; font-weight: bold; color: #fff; line-height: 1.2; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); animation: fadeIn 2s ease-in-out;">
+      WELCOME TO TODO APP
+    </h1>
+    
+  </div>
+
+  <!-- Corner Stickers -->
+  
+</div>
+
+<style>
+  /* Keyframe animation for fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Style for corner stickers */
+  .corner-sticker {
+    position: absolute;
+    width: 80px; /* Adjust size as needed */
+  }
+  .top-left {
+    top: 20px;
+    left: 20px;
+  }
+  .top-right {
+    top: 20px;
+    right: 20px;
+  }
+  .bottom-left {
+    bottom: 20px;
+    left: 20px;
+  }
+  .bottom-right {
+    bottom: 20px;
+    right: 20px;
+  }
+</style>
+{% endblock %}
